@@ -1,0 +1,132 @@
+.footer {
+    font-size: 20px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    width: 60%;
+    background-color: #f3f3f3;
+}
+
+.mainBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10px 5px 5px #707070;
+}
+
+input[type='text'] {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-style: italic;
+    align-items: center;
+    font-weight: 100;
+    background-color: #f3f3f3;
+}
+
+.itemList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    background-color: #f3f3f3;
+}
+
+.itemText {
+    font-size: 30px;
+    font-weight: 100;
+    background-color: #f3f3f3;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+.checkbox {
+    width: 30px; 
+    height: 30px; 
+    border: 2px solid #ccc; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px; 
+    position: relative; 
+    transition: background-color 0.3s, border-color 0.3s; 
+    background-color: #f3f3f3;
+}
+
+input[type='checkbox']:checked + .checkbox {
+    border-color: #01d135e0; 
+}
+
+.checkbox::after {
+    content: '';
+    display: none; 
+    width: 5px; 
+    height: 15px; 
+    border: solid #01d135e0; 
+    border-width: 0 2px 2px 0; 
+    transform: rotate(45deg);
+    position: absolute;
+    left: 12px; 
+    top: 5px; 
+}
+
+input[type='checkbox']:checked + .checkbox::after {
+    display: block; 
+}
+
+.item{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #f3f3f3;
+}
+
+.itemCount {
+    background-color: #f3f3f3;
+}
+
+button {
+    border: none;
+    font-size: 20px;
+    font-weight: 100;
+    color: #707070;
+    background-color: #f3f3f3;
+}
+
+button.active, button.active:active{
+    border: 1px solid #c25b5b;
+    border-radius: 5px;
+    color: #c25b5b;
+}
+
+button.completed, button.completed:active{
+    border: 1px solid #01d135e0;
+    border-radius: 5px;
+
+    color: #01d135e0;
+}
+
+button.all, button.all:active{
+    border: 1px solid #707070;
+    border-radius: 5px;
+}
+
+button.clear:active{
+    border: 1px solid #707070;
+    border-radius: 5px;
+}
